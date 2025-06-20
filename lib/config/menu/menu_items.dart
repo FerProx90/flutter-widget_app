@@ -40,4 +40,10 @@ class MenuItem {
       link: '/snackbars',
       icon: Icons.info_outlined,
     ),
+    MenuItem(
+      title: 'Anomated container',
+      subTitle: 'Statetful widget animado',
+      link: '/animated',
+      icon: Icons.check_box_outline_blank_outlined,
+    ),
   ];
