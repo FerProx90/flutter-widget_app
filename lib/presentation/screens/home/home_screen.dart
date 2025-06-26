@@ -10,10 +10,16 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final scaffoldKey =
+        GlobalKey<
+          ScaffoldState
+        >(); // Ahorita lo hacemos así porque SideMenu está directamente como child del homeScreen
+
     return Scaffold(
+      key: scaffoldKey,
       appBar: AppBar(title: const Text("Home Screen")),
       body: const _HomeView(),
-      drawer: const SideMenu()
+      drawer: SideMenu(scaffoldKey: scaffoldKey),
     );
   }
 }
